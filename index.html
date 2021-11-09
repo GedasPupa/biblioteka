@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteka</title>
 </head>
-<body style="padding-left: 100px; padding-top: 30px;">
+<body style="padding: 50px;">
     <h1>Biblioteka</h1>
+    <div class="main" style="display: flex;">
+        <div style="width: 50%">
+            <h2>Sukurti (nupirkti) naują knygą</h2>
+            <input id="pavadinimas" type="text" placeholder="Pavadinimas" />
+            <input id="autorius" type="text" placeholder="Autorius" />
+            <input id="metai" type="number" placeholder="Metai" />
+            <button id="nupirkti">Nupirkti</button>
+            <br><br>
 
-    <h2>Sukurti (nupirkti) naują knygą</h2>
-    <input id="pavadinimas" type="text" placeholder="Pavadinimas" />
-    <input id="autorius" type="text" placeholder="Autorius" />
-    <input id="metai" type="number" placeholder="Metai" />
-    <button id="nupirkti">Nupirkti</button>
-    <br><br>
+            <h2>Pasiskolinti knygą</h2>
+            <input id="pavadinimas2" type="text" placeholder="Pavadinimas" />
+            <button id="pasiskolinti">Pasiskolinti</button>
+            <br><br>
 
-    <h2>Pasiskolinti knygą</h2>
-    <input id="pavadinimas2" type="text" placeholder="Pavadinimas" />
-    <button id="pasiskolinti">Pasiskolinti</button>
-    <br><br>
+            <h2>Grąžinti knygą</h2>
+            <input id="pavadinimas3" type="text" placeholder="Pavadinimas" />
+            <button id="grazinti">Grąžinti</button>
+            <br><br>
 
-    <h2>Grąžinti knygą</h2>
-    <input id="pavadinimas3" type="text" placeholder="Pavadinimas" />
-    <button id="grazinti">Grąžinti</button>
-    <br><br>
-
-    <h2>Rasti knygas</h2>
-    <input id="pavadinimas4" type="text" placeholder="Pavadinimas" />
-    <label for="check"> Rasti paimtas: </label>
-    <input id="check" type="checkbox" />
-    <button id="rasti">Rasti</button>
-
+            <h2>Rasti knygas</h2>
+            <input id="pavadinimas4" type="text" placeholder="Pavadinimas" />
+            <label for="check"> Rasti paimtas:</label>
+            <input id="check" type="checkbox" />
+            <button id="rasti">Rasti</button>
+        </div>
+        <div style="width: 50%">
+            <h2>Output:</h2>
+            <p id="output"></p>
+        </div>
+    </div>
     <script type="module" src="./js/script.js"></script>
 </body>
 </html>
